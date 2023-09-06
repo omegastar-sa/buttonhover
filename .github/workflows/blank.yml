@@ -1,0 +1,53 @@
+<html>
+
+ 
+
+   <style>
+
+      #btn {
+
+            position: absolute;
+
+            transition: .5s;
+
+            background-color: dodgerblue;
+
+            padding: 10px;
+
+            height: 40px;
+
+            width: 150px;
+
+        }
+
+   </style>
+
+   <body>
+
+      <button id="btn">Click me if you can</button>
+
+   </body>
+
+   <script>
+
+ 
+
+const button = document.getElementById('btn');
+
+button.addEventListener('mouseover', function () {
+
+    button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+
+    button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+
+});
+
+button.addEventListener('click', function () {
+
+    alert('you clicked me')
+
+})
+
+</script>
+
+</html>
